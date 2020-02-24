@@ -22,6 +22,6 @@ class Author
   end
   
   def posts
-    @posts
+    Post.all.select{|x| x.artist == self}
   end
 end
