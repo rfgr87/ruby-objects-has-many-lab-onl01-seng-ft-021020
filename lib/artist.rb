@@ -14,10 +14,7 @@ class Artist
   end
   
   def songs
-    Song.all.select{|x| 
-      if x.artist == self
-        x 
-      end
+    Song.all.select{|x| x.artist == self}
   end
   
   
